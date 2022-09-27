@@ -1,0 +1,36 @@
+.landingPageMenuContainer{
+    height: 100vh;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    backdrop-filter: blur(1.2px);
+    background-color: rgba(0, 0, 0, 0.281);
+    
+}
+
+.landingPageMenuTitle{
+    color: antiquewhite;
+    font-weight: 600;
+    font-size: 45px;
+}
+
+.landingPageMenuButton{
+    border-radius: 5px;
+    border: 2px solid rgba(0, 255, 255, 0.705);
+    background-color: rgba(28, 151, 151, 0.932);
+    color:antiquewhite;
+    padding: 10px 15px;
+    font-size: 18px;
+    font-weight: 600;
+    transition: font-size 0.4s, background-color 0.2s, color 0.2s;
+}
+
+.landingPageMenuButton:hover{
+    border: 2px solid rgba(0, 255, 255, 0.705);
+    background-color: rgba(5, 252, 252, 0.932);
+    color:rgb(16, 53, 51);
+    font-size: 20px;
+    
+}

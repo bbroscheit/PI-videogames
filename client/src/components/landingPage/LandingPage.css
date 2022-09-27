@@ -1,0 +1,11 @@
+.mainContainer{
+    margin: 0px;
+    background-image: url("https://www.wallpapertip.com/wmimgs/80-806806_popular-video-games-collage.jpg" );
+    background-color: #1d1a1a;
+    background-position: center;
+    background-size: cover; 
+    height: 100vh;
+    width: 100vw;
+    
+}
+

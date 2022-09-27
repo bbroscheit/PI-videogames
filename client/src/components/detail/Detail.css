@@ -1,0 +1,64 @@
+.detailContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(17, 16, 16, 0.952);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: antiquewhite;
+}
+
+.detailTitle{
+    width: fit-content;
+    padding-bottom: 8px;
+    border-bottom: 2px antiquewhite solid;
+    font-weight: 700;
+    margin: 20px auto 10px;
+}
+
+.detailImage{
+    max-width: 50%;
+    margin: 10px;
+}
+
+.detailDescription{
+    margin: 25px auto;
+    text-align:justify;
+    max-width: 70%;
+}
+
+.detailGroup{
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row ;
+    width: 45%;
+}
+
+.detailLink{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.detailButton{
+    padding: 15px;
+    border-radius: 9999px;
+    border: 1px white solid;
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+    background-color: azure;
+    cursor: pointer;
+}
+
+.detailButton{
+    
+    background-color: rgb(255, 255, 255);
+    
+}

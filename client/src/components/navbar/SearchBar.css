@@ -1,0 +1,51 @@
+.searchBarContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    border-radius: 9999px;
+    border: 1px antiquewhite solid;
+    background-color: white;
+    padding: 3px;
+}
+
+.inputSearchBar{
+    width: 300px;
+    border: none;
+    background: none;
+    padding: 8px 20px;
+    color: antiquewhite;
+    font-size: 12px;
+    font-weight: 500;
+    outline: none;
+}
+
+.inputSearchBar::placeholder{
+    font-size: 12px;
+    font-weight: 600;
+    color: rgb(17, 16, 16);
+}
+
+.inputSearchBar:focus{
+    background: none;
+    color: rgb(17, 16, 16);
+    font-size: 12px;
+    font-weight: 600;
+    outline: none;
+    border: none;
+}
+
+
+
+.buttonSearchBar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    border-radius: 9999px;
+    color: rgb(17, 17, 16);
+    font-size: 15px;
+    border-color: rgba(17, 17, 16, 0.938);
+    padding: 5px 7px;
+    background: none;
+}

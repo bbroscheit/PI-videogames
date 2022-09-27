@@ -1,0 +1,168 @@
+.formContainer{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("https://uconn-today-universityofconn.netdna-ssl.com/wp-content/uploads/2016/12/video-games-shutterstock_278969585-1200px.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.formTitle{
+    color: antiquewhite;
+    border-bottom: 2px antiquewhite solid;
+
+}
+
+.form{
+    padding: 20px;
+    border: 1px antiquewhite solid;
+    border-radius: 10px;
+    background-color: rgba(250, 235, 215, 0.459);
+    backdrop-filter: blur(5px);
+    margin-bottom: 20px;
+}
+
+.form label{
+    margin: 5px;
+}
+
+.form input , .form textarea{
+    border-radius: 5px;
+    padding-bottom: 8px;
+    padding-left: 10px;
+    border:none;
+    border-bottom: 2px rgb(17, 16, 16) solid;
+    background: none;
+}
+
+input:focus, .form textarea:focus{
+    border: none;
+    border-bottom: 2px rgb(17, 16, 16) solid;
+    background: none;
+    outline: none;
+}
+
+
+.formLabelContainer{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;  
+
+}
+
+.formData, .formSelects , .formCheckbox{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: space-between;
+    flex-direction: column;
+}
+
+.formData{
+    padding: 0px 25px;
+}
+
+.formData label , .formCheckbox label, .formSelects label{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.formSelects{
+    margin-left: 15px;
+}
+
+.formCheckbox{
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px antiquewhite solid;
+    border-radius: 5px;
+    flex-wrap: wrap;
+}
+
+.formCheckbox label{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.formChecks{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.formButton{
+    text-align: center;
+    margin:15px auto;
+    margin-top: 25px;
+}
+
+.formButton button{
+    width: 120px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 1px antiquewhite solid;
+    background-color: rgba(250, 235, 215, 0.418);
+    margin: 0px 5px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.normal{
+    visibility: hidden;
+}
+
+.danger, .dangerGenres{
+    visibility: visible;
+    text-align: left;
+    color: rgb(209, 3, 3);
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.dangerGenres{
+    text-align: center;
+}
+
+.formPlatforms{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.inputPlatform{
+    border: 1px rgb(17, 17, 17) solid;
+    border-radius: 9999px;
+    padding: 4px 10px;
+    background-color: rgba(255, 255, 255, 0.37);
+}
+
+.inputPlatform:hover{
+    cursor:pointer;
+}
+
+.inputPlatform p {
+    padding: 0px;
+    margin: 0px;
+}
+
+.formBackButton{
+    text-decoration: none;
+    color: black;
+    
+}
+
+
+
+

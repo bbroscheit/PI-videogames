@@ -1,0 +1,21 @@
+.navbarContainer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(17, 16, 16, 0.986);
+    padding: 15px 30px;
+    
+}
+
+.navbarLink{
+    color: antiquewhite;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.navbarLink:hover{
+    color: antiquewhite;
+    border-bottom: 1px antiquewhite solid;
+}

@@ -1,0 +1,57 @@
+.card{
+    background-color: rgba(240, 231, 231, 0.219);
+    width: 250px;
+    height: 350px;
+    margin: 8px 2px;
+    padding: 10px 6px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    border: 2px rgba(0, 0, 0, 0.26) solid;
+    backdrop-filter: blur(5px);
+    
+}
+
+.cardImage{
+    overflow-x: hidden;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.card img{
+    overflow: hidden;
+}
+
+.cardTitle{
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    height: 12%;
+}
+
+.cardLine{
+    width: 100%;
+    border-radius: 100%;
+    border: 1px rgba(240, 231, 231, 0.219) solid;
+}
+
+.containerGender{
+    display: inline-flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.cardGenre{
+    margin: 5px;
+    padding: 5px 10px;
+    background-color:rgb(16, 16, 17);
+    color: antiquewhite;
+    align-items: center;
+    border: 1px antiquewhite solid;
+    border-radius: 5px;
+}
+

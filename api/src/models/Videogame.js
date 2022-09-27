@@ -15,21 +15,26 @@ module.exports = (sequelize) => {
       allowNull: false
     },
     description:{
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(500),
       allowNull: false
     },
     release:{ 
       type: DataTypes.STRING,
-      
+      defaultValue: "12-12-12"
+    },
+    image:{ 
+      type: DataTypes.STRING,
+      defaultValue:"https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/styles/1200/public/media/image/2021/12/salon-gamer-playstation-2554073.jpg?itok=KpSrZAhB"
     },
     rating:{
       type: DataTypes.FLOAT,
-      default: 5
+      defaultValue:5
     },
     platforms:{ 
-      type: DataTypes.STRING,
-      default: "none"
+      type: DataTypes.ARRAY(DataTypes.STRING),
+      defaultValue:["Playstation"]
     },
+    
     created:{
       type: DataTypes.BOOLEAN,
       allowNull:false,
