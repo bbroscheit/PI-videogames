@@ -8,6 +8,7 @@ const initialState = {
 };
 
 function mainReducer(state = initialState, action) {
+  console.log(action.payload, "soy el payload")
   switch (action.type) {
     case "GET_ALL_GAMES":
       return {
@@ -30,6 +31,11 @@ function mainReducer(state = initialState, action) {
         ...state,
         detail: action.payload,
       };
+    case "DETAIL_REMOVE":
+      return{
+        ...state,
+        detail: action.payload,
+      }
     case "GET_DETAIL_API":
       return {
         ...state,

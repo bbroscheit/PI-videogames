@@ -71,6 +71,14 @@ export function getDetail(id) {
   };
 }
 
+export function detailRemove(payload){
+  console.log(payload,"soy payload de action")
+  return {
+    type: "DETAIL_REMOVE",
+    payload: payload,
+  }
+}
+
 
 export function newGame(payload){
   return async function(dispatch){

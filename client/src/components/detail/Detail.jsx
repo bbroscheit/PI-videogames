@@ -2,7 +2,7 @@ import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useHistory} from "react-router-dom";
 import { useEffect } from "react";
-import { getDetail, getDetailApi , deleteGame} from "../../actions";
+import { getDetail, getDetailApi , deleteGame, detailRemove} from "../../actions";
 import Loading from "../loading/Loading";
 import "./Detail.css";
 
@@ -18,7 +18,10 @@ export default function Detail(props) {
     dispatch(getDetail(id));
     dispatch(getDetailApi(id));
 
-    
+    return(() => {
+      dispatch(detailRemove([]));
+      
+    })
   }, [id]);
 
   const handleDelete = () => {

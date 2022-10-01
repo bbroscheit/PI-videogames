@@ -16,7 +16,7 @@ export default function Paginado({gamesForPage, games, paginado}) {
         {
           numberPage && numberPage.map(number => 
             <li>
-              <a onClick={()=>paginado(number)} key={number}>{number}</a>
+              <a onClick={()=>paginado(number)} className="listLink" key={number}>{number}</a>
             </li>)
         }
       </ul>

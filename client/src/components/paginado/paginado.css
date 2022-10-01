@@ -29,3 +29,11 @@
     background-color: antiquewhite;
     color:rgb(16, 16, 17);
 }
+
+.listLink:active{
+    cursor: pointer;
+    border-radius: 100%;
+    border: 1px solid antiquewhite;
+    background-color: antiquewhite;
+    color:rgb(16, 16, 17);
+}
