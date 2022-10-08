@@ -84,13 +84,14 @@ router.get("/videogames", async (req, res) => {
       }
       return 0;
     });
-    res.status(202).send(allGames);
+    res.status(200).send(allGames);
   }
 });
 
 router.get("/videogames/:id", async (req, res) => {
-  const { id } = req.params;
-  const allGames = await getAllData();
+  const { id } = req.params;   
+  //const { id } =req.query
+    const allGames = await getAllData();
 
   if (id) {
     let gameFilter = await allGames.filter((el) => el.id == id);
@@ -157,11 +158,11 @@ router.get("/genre", async (req, res) => {
 
 router.delete('/videogames/delete/:id', async (req, res, next) => {
   const { id } = req.params;
-  console.log(id, "soye l id  ")
+  //console.log(id, "soye l id  ")
   if (id.length < 35) res.json('ID must be a game from the database');
   try {
        const result = await Videogame.findOne({ where: { id : id } });
-      console.log(result,"soy result")
+      //console.log(result,"soy result")
       if (result) {
       Videogame.destroy({
         where:{

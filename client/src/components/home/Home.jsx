@@ -163,6 +163,7 @@ export default function Home() {
                     id={c.id}
                     name={c.name}
                     image={c.image}
+                    
                     genres={c.genres}
                     generos={c.generos}
                   />

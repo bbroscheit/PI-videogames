@@ -43,7 +43,6 @@ export default function SearchBar() {
       >
         <FaSearch />
       </button>
-      {/* onKeyDown={(e) =>{if(e.key === 'Enter'){handleSubmit()}}}  */}
     </div>
   );
 }

@@ -8,7 +8,7 @@ const initialState = {
 };
 
 function mainReducer(state = initialState, action) {
-  console.log(action.payload, "soy el payload")
+  //console.log(action.payload, "soy el payload")
   switch (action.type) {
     case "GET_ALL_GAMES":
       return {
@@ -100,13 +100,13 @@ function mainReducer(state = initialState, action) {
               }
               return 0;
             });
-      console.log(sortName);
+      //console.log(sortName);
       return {
         ...state,
         allGames: sortName,
       };
     case "SORT_RATING":
-      console.log(state.allGames);
+      //console.log(state.allGames);
       let sortRating =
         action.payload === "AscRating"
           ? state.allGames.sort(function (a, b) {

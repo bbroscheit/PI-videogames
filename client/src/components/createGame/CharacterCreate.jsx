@@ -62,7 +62,7 @@ export default function CharacterCreate() {
     }
     if(!input.rating){
       errors.rating = "El campo no debe quedar vacio"
-    }else if(input.rating < 0 && input.rating > 5){
+    }else if(input.rating < 0 || input.rating > 5){
       errors.rating = "el valor debe estar en 0 y 5"
     }
     if(input.platforms.length < 1){
@@ -197,7 +197,7 @@ export default function CharacterCreate() {
               onChange={(e) => handleChange(e)}
             />
             <p className={error.description?"danger":"normal"}>{error.description}</p>
-            <label>Lanzamiento:</label>
+            <label>Lanzamiento (dd/mm/yyyy):</label>
             <input
               type="text"
               value={input.release}

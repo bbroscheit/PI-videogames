@@ -9,6 +9,7 @@ function Card({ id, name, image, genres, generos }) {
       <img className="cardImage" src={image} alt="portada del juego" />
       <hr className="cardLine" />
       <h3 className="cardTitle"><Link to={`/home/${id}`} className="cardTitle">{name}</Link></h3>
+      
       <div className="containerGender">
         {genres
           ? genres.map((el) => <h5 className="cardGenre">{el}</h5>)

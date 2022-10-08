@@ -72,7 +72,7 @@ export function getDetail(id) {
 }
 
 export function detailRemove(payload){
-  console.log(payload,"soy payload de action")
+  //console.log(payload,"soy payload de action")
   return {
     type: "DETAIL_REMOVE",
     payload: payload,

@@ -30,7 +30,7 @@ export default function Detail(props) {
     history.push('/home')
   }
 
-  console.log(detail)
+  //console.log(detail)
   return (
     <div className="detailContainer">
       {detail.length < 1 ? 
