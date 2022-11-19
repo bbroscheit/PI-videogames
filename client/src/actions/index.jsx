@@ -15,7 +15,7 @@ export function getGamesByName(payload){
   //console.log(payload)
   return async function(dispatch){
     try{
-      let json = await axios(`http://localhost:3001/videogames?name=${payload}`);
+      let json = await axios(`/videogames?name=${payload}`);
       //console.log(json.data , " soy data")
       
       if(json.data.length >= 1){
@@ -41,7 +41,7 @@ export function getGamesByName(payload){
 
 export function getGenres(){
   return async function(dispatch){
-    let json = await axios(`http://localhost:3001/genre`)
+    let json = await axios(`/genre`)
     return dispatch({
       type:"GET_GENRE",
       payload:json.data
@@ -62,11 +62,11 @@ export function getDetailApi(id){
 
 export function getDetail(id) {
   return async function (dispatch) {
-    const response = await fetch(`http://localhost:3001/videogames/${id}`);
-    const json = await response.json();
+    const json = await axios(`/videogames/${id}`);
+    // const json = await response.json();
     dispatch({
       type: "GET_DETAIL",
-      payload: json,
+      payload: json.data,
     });
   };
 }
@@ -82,7 +82,7 @@ export function detailRemove(payload){
 
 export function newGame(payload){
   return async function(dispatch){
-    const json = await axios.post(`http://localhost:3001/videogames`,payload)
+    const json = await axios.post(`/videogames`,payload)
     return json
   }
 }
@@ -117,7 +117,7 @@ export function sortByRating(payload){
 
 export const deleteGame = (id) => {
   return function (dispatch) {
-      axios.delete(`http://localhost:3001/videogames/delete/${id}`)
+      axios.delete(`/videogames/delete/${id}`)
           .then(response => {
               console.log(response.data);
               dispatch({

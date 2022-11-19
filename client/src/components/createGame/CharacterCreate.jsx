@@ -249,7 +249,7 @@ export default function CharacterCreate() {
           </div>
         </div>
         <div className="formButton">
-          <button><Link to="/home" className="formBackButton">Back Home</Link></button>
+          <button><Link to="/" className="formBackButton">Back Home</Link></button>
           {button.complete === false ? <button disabled="disabled">Create</button> : <button type="submit" >Create</button>}
           <button type="submit" onClick={e => handleReset(e)}>Reset</button>
         </div>
