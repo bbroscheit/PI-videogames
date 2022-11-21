@@ -33,6 +33,8 @@
 
 🗃️ Ordenamiento:
   * Permite ordenar los Videojuegos alfabéticamente o por ranking.
+  
+  Deploy: https://pi-videogames-orcin.vercel.app/home
 
 🗃️ Autenticación de Usuarios:
   * Permite crear usuarios.
