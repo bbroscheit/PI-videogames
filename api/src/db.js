@@ -42,9 +42,14 @@ const {
 //   native: false, // lets Sequelize know we can use pg-native for ~30% more speed
 // });
 
-const sequelize = new Sequelize(DB_DEPLOY, {
+const sequelize = new Sequelize("postgres://cerberos87:x3Td2EOrIPMRvcoOatiy208UB9v9Fn7N@dpg-ch3da8dgk4qarqmilcg0-a.oregon-postgres.render.com/videogamesbd", {
   logging: false, // set to console.log to see the raw SQL queries
   native: false, // lets Sequelize know we can use pg-native for ~30% more speed
+  dialect: 'postgres',
+  dialectOptions: {
+    ssl: {
+      rejectUnauthorized: false, // very important
+    }}
 });
 
 
