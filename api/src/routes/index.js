@@ -74,7 +74,7 @@ router.get("/videogames", async (req, res) => {
         el.name.toLowerCase().includes(name.toLowerCase())
       );
       gameFilter
-        ? res.status(200).send(gameFilter)
+        ? res.status(200).json(gameFilter)
         : res.status(404).send("Game not Found");
     } else {
       allGames.sort((a, b) => {
@@ -88,7 +88,7 @@ router.get("/videogames", async (req, res) => {
         }
         return 0;
       });
-      res.status(200).send(allGames);
+      res.status(200).json(allGames);
     }
   } catch (error) {
     console.log(error)
@@ -103,7 +103,7 @@ router.get("/videogames/:id", async (req, res) => {
   const allGames = await getAllData();
   try {
     if (id) {
-      let gameFilter = await allGames.filter((el) => el.id == id);
+      let gameFilter = allGames.filter((el) => el.id == id);
 
       gameFilter
         ? res.status(200).json(gameFilter)
@@ -174,7 +174,7 @@ router.get("/genre", async (req, res) => {
 
     const allGenres = await Generos.findAll();
 
-    res.send(allGenres);
+    res.json(allGenres);
   } catch (error) {
     console.log(error)
   }
