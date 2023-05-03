@@ -2,7 +2,7 @@ import axios from "axios";
 
 export function getAllGames() {
   return async function (dispatch) {
-    const response = await fetch(`https://api.render.com/deploy/srv-ch60mklgk4qfhv7d9c7g?key=XcScjvS0ZpQ`);
+    const response = await fetch(`https://videogamesback.onrender.com/`);
     const json = await response.json();
     dispatch({
       type: "GET_ALL_GAMES",

@@ -9,7 +9,7 @@ import { BrowserRouter } from 'react-router-dom';
 import axios from "axios";
 
 // axios.defaults.baseURL = "http://localhost:3001";
-axios.defaults.baseURL = "https://api.render.com/deploy/srv-ch60mklgk4qfhv7d9c7g?key=XcScjvS0ZpQ";
+axios.defaults.baseURL = "https://videogamesback.onrender.com/";
 
 ReactDOM.render(
   //<React.StrictMode>
